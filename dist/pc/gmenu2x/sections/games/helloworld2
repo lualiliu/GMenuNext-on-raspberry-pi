@@ -1,0 +1,4 @@
+title=helloworld
+exec=/home/luali/GMenuNext/dist/pc/gmenu2x/sections/emulators/helloworld
+clock=528
+selectorbrowser=true
