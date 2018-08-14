@@ -7,17 +7,26 @@ And This project is a fork of GMenuNext. based on raspbian and raspberry pi.
 # 编译(Compile And Build)
 
 在raspberry pi中安装libsdl包(sudo apt-get install libsdl...)
+
 make dist
+
 编译后的文件在dist文件夹中。
 
 # 映射到fb1（如TFT屏幕）
 安装屏幕驱动（install screen driver）
+
 In gmenu2x.cpp(lines 367)
+
 putenv((char*)"FRAMEBUFFER=/dev/fb0");
+
 putenv((char*)"SDL_FBDEV=/dev/fb0");
+
 to
+
 putenv((char*)"FRAMEBUFFER=/dev/fb1");
+
 putenv((char*)"SDL_FBDEV=/dev/fb1");
+
 
 ## Contacts
 
